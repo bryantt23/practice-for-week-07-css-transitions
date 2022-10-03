@@ -32,9 +32,18 @@
   height: 200px;
   width: auto;
   margin-left: 300px;
-  /* Your animation here
+  /* Your animation here*/
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes spin {
-    /* Set up your keyframe animation here*/
+  /* Set up your keyframe animation here*/
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
